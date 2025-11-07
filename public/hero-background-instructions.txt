@@ -1,0 +1,23 @@
+HERO BACKGROUND IMAGE INSTRUCTIONS
+===================================
+
+Add your hero background image as: /public/hero-background.jpg
+
+Image Requirements:
+- Format: JPG or WebP (preferred for better performance)
+- Dimensions: Minimum 1920x1080px (Full HD), 2560x1440px recommended
+- Aspect Ratio: 16:9 or wider
+- File Size: Optimize to under 500KB using tools like TinyPNG or Squoosh
+- Subject: Editorial-style fitness photo with a woman in workout attire
+- Style: Natural lighting, modern aesthetic, warm tones
+- Composition: Subject should be on the right side (content is on the left)
+
+The image will have a dark overlay (charcoal/80 to charcoal/60) applied to ensure text readability.
+
+Alternative filenames supported:
+- /public/hero-background.jpg
+- /public/hero-background.webp
+- /public/hero-background.png
+
+If using a different filename, update line 14 in:
+components/sections/Hero.tsx

@@ -8,8 +8,8 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6">
-            <h3 className="font-serif text-2xl font-bold mb-2">Mariana Gómez</h3>
-            <p className="text-white/70">
+            <h3 className="font-serif text-4xl md:text-5xl font-bold mb-4">Mariana Gómez</h3>
+            <p className="text-white/70 text-lg">
               Entrenadora Personal · Especialista en Nutrición · Coach de Hábitos
             </p>
           </div>

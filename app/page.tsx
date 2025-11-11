@@ -1,4 +1,5 @@
 import Hero from "@/components/sections/Hero";
+import VideoSection from "@/components/sections/VideoSection";
 import AboutChallenge from "@/components/sections/AboutChallenge";
 import TargetAudience from "@/components/sections/TargetAudience";
 import ProgramFeatures from "@/components/sections/ProgramFeatures";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <main className="overflow-x-hidden">
       <Hero />
+      <VideoSection />
       <AboutChallenge />
       <TargetAudience />
       <ProgramFeatures />

@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Poppins } from "next/font/google";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${playfair.variable} ${poppins.variable} font-sans antialiased`}
+        className={`${cormorant.variable} ${dmSans.variable} font-sans antialiased`}
       >
         {children}
       </body>

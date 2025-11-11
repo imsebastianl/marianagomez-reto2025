@@ -19,12 +19,12 @@ const faqs = [
   {
     question: "¿Necesito gimnasio?",
     answer:
-      "No. Puedes elegir entre la versión gym o la versión casa, ambas diseñadas para ayudarte a quemar grasa y tonificar tu cuerpo.",
+      "No. Este reto fue pensado para poder hacerlo en cualquier lugar, sin necesidad de muchos implementos.",
   },
   {
     question: "¿Puedo hacerlo si estoy retomando?",
     answer:
-      "Sí. Todas las rutinas y menús están explicados paso a paso y adaptados a diferentes niveles. No importa si estás empezando o volviendo a activarte, podrás hacerlo sin problema.",
+      "Sí. Todas las rutinas y menús están explicados paso a paso para que puedas seguirlas con claridad y sin complicaciones.",
   },
   {
     question: "¿Cuándo inicia y cuánto dura?",

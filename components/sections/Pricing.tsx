@@ -5,9 +5,10 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Check, Clock } from "lucide-react";
+import { CHECKOUT_URL } from "@/lib/constants";
 
 const includedItems = [
-  "4 semanas de rutinas guiadas (GYM o CASA)",
+  "4 semanas de rutinas guiadas",
   "4 menús semanales personalizados",
   "Listas de mercado prácticas",
   "Meditaciones semanales",
@@ -90,12 +91,14 @@ export default function Pricing() {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
-                <Button
-                  size="lg"
-                  className="w-full bg-vibrant-pink hover:bg-vibrant-pink/90 text-white px-8 sm:px-10 py-6 sm:py-8 text-lg sm:text-xl font-bold rounded-full shadow-2xl hover:shadow-vibrant-pink/50 transition-all duration-300 transform hover:scale-105"
-                >
-                  Apartar mi cupo ahora
-                </Button>
+                <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="lg"
+                    className="w-full bg-vibrant-pink hover:bg-vibrant-pink/90 text-white px-8 sm:px-10 py-6 sm:py-8 text-lg sm:text-xl font-bold rounded-full shadow-2xl hover:shadow-vibrant-pink/50 transition-all duration-300 transform hover:scale-105"
+                  >
+                    Apartar mi cupo ahora
+                  </Button>
+                </a>
               </motion.div>
 
               {/* Trust Badge */}

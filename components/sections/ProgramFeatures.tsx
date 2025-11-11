@@ -12,8 +12,8 @@ const features = [
     icon: Dumbbell,
     title: "4 semanas de rutinas guiadas",
     description:
-      "Rutinas diseñadas para hacer en cualquier lugar (GYM o CASA) enfocadas en pérdida de grasa sin perder músculo.",
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80&fit=crop",
+      "Rutinas diseñadas para hacer en cualquier lugar, enfocadas en pérdida de grasa sin perder músculo.",
+    image: "/images/mariana/features/workout-1.png",
   },
   {
     icon: UtensilsCrossed,
@@ -34,21 +34,21 @@ const features = [
     title: "Lista de suplementos recomendados",
     description:
       "Mis favoritos personales, opcionales, pero que pueden potenciar tus resultados.",
-    image: "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=800&q=80&fit=crop",
+    image: "/images/mariana/features/supplements.jpg",
   },
   {
     icon: Sparkles,
     title: "Meditaciones semanales",
     description:
       "Una por cada semana, para mantenerte en calma, enfocada y constante.",
-    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80&fit=crop",
+    image: "/images/mariana/features/meditation-2.jpg",
   },
   {
     icon: Users,
     title: "Comunidad privada",
     description:
       "Acompañamiento diario en grupo de WhatsApp, con mi guía directa y apoyo real de mujeres como tú.",
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80&fit=crop",
+    image: "/images/mariana/features/community-2.jpg",
   },
 ];
 
@@ -88,7 +88,7 @@ export default function ProgramFeatures() {
                       alt={feature.title}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
-                      unoptimized
+                      unoptimized={feature.image.startsWith('https://')}
                     />
                     {/* Gradient Overlay for Text Readability */}
                     <div className="absolute inset-0 bg-gradient-to-b from-charcoal/80 via-charcoal/70 to-charcoal/90 group-hover:from-vibrant-pink/90 group-hover:via-vibrant-pink/80 group-hover:to-vibrant-pink/95 transition-all duration-500" />

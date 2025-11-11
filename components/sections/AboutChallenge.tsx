@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
+import { CHECKOUT_URL } from "@/lib/constants";
 
 export default function AboutChallenge() {
   const ref = useRef(null);
@@ -47,12 +48,14 @@ export default function AboutChallenge() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <Button
-              size="lg"
-              className="w-full sm:w-auto bg-vibrant-pink hover:bg-vibrant-pink/90 text-white px-8 sm:px-12 py-6 sm:py-7 text-base sm:text-lg font-semibold rounded-full shadow-2xl hover:shadow-vibrant-pink/50 transition-all duration-300 transform hover:scale-105"
-            >
-              Quiero empezar a perder grasa
-            </Button>
+            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="w-full sm:w-auto bg-vibrant-pink hover:bg-vibrant-pink/90 text-white px-8 sm:px-12 py-6 sm:py-7 text-base sm:text-lg font-semibold rounded-full shadow-2xl hover:shadow-vibrant-pink/50 transition-all duration-300 transform hover:scale-105"
+              >
+                Quiero empezar a perder grasa
+              </Button>
+            </a>
           </motion.div>
         </motion.div>
       </div>

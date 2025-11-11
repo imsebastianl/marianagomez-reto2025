@@ -4,20 +4,31 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Calendar, MessageCircle, Trophy } from "lucide-react";
 import Image from "next/image";
+import { CHECKOUT_URL } from "@/lib/constants";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image - Using Unsplash test image */}
+      {/* Background Image - Mariana's gym workout photo */}
       <div className="absolute inset-0 z-0">
+        {/* Mobile & Tablet Background */}
         <Image
-          src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1920&q=80&fit=crop"
-          alt="Fitness transformation background"
+          src="/images/mariana/hero/hero-bg-1-mobile.jpg"
+          alt="Mariana Gómez - Fitness transformation"
           fill
-          className="object-cover"
+          className="object-cover lg:hidden"
           priority
           quality={90}
-          unoptimized
+        />
+
+        {/* Desktop Background */}
+        <Image
+          src="/images/mariana/hero/hero-bg-1.png"
+          alt="Mariana Gómez - Fitness transformation"
+          fill
+          className="object-cover hidden lg:block"
+          priority
+          quality={90}
         />
 
         {/* Modern overlay for better text readability */}
@@ -40,7 +51,7 @@ export default function Hero() {
               className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
             >
               Reto de Fin de Año
-              <span className="block text-vibrant-pink mt-2">by Mariana Gómez</span>
+              <span className="block text-white/80 text-2xl md:text-3xl font-normal mt-3">by Mariana Gómez</span>
             </motion.h1>
 
             <motion.h2
@@ -90,12 +101,14 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              <Button
-                size="lg"
-                className="w-full sm:w-auto bg-vibrant-pink hover:bg-vibrant-pink/90 text-white px-8 sm:px-12 py-6 sm:py-7 text-base sm:text-lg font-semibold rounded-full shadow-2xl hover:shadow-vibrant-pink/50 transition-all duration-300 transform hover:scale-105"
-              >
-                Quiero ganarle a enero
-              </Button>
+              <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+                <Button
+                  size="lg"
+                  className="w-full sm:w-auto bg-vibrant-pink hover:bg-vibrant-pink/90 text-white px-8 sm:px-12 py-6 sm:py-7 text-base sm:text-lg font-semibold rounded-full shadow-2xl hover:shadow-vibrant-pink/50 transition-all duration-300 transform hover:scale-105"
+                >
+                  Quiero ganarle a enero
+                </Button>
+              </a>
             </motion.div>
           </motion.div>
 

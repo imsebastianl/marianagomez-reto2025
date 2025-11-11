@@ -22,11 +22,10 @@ export default function AboutMariana() {
               className="relative h-[500px] lg:h-[650px] rounded-3xl overflow-hidden shadow-2xl order-2 lg:order-1"
             >
               <Image
-                src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=800&q=80&fit=crop"
+                src="/images/mariana/about/mariana-portrait.jpg"
                 alt="Mariana Gómez - Fitness Coach"
                 fill
                 className="object-cover"
-                unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent" />
             </motion.div>
@@ -49,8 +48,8 @@ export default function AboutMariana() {
                 </p>
 
                 <p>
-                  He acompañado a cientos de mujeres a perder grasa sin perder libertad,
-                  enseñándoles a cuidar su cuerpo con amor y estrategia.
+                  He acompañado a cientos de mujeres a construir hábitos sostenibles,
+                  entrenar con propósito y descubrir que sí es posible transformar su cuerpo sin perder la calma.
                 </p>
 
                 <p className="text-charcoal font-semibold text-xl">

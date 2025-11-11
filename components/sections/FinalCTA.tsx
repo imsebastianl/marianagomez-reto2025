@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
+import { CHECKOUT_URL } from "@/lib/constants";
 
 export default function FinalCTA() {
   const ref = useRef(null);
@@ -35,12 +36,14 @@ export default function FinalCTA() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="space-y-6"
           >
-            <Button
-              size="lg"
-              className="w-full sm:w-auto bg-white text-vibrant-pink hover:bg-white/90 px-8 sm:px-14 py-6 sm:py-8 text-base sm:text-xl font-bold rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110"
-            >
-              Quiero perder grasa y cerrar el año con toda
-            </Button>
+            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="w-full sm:w-auto bg-white text-vibrant-pink hover:bg-white/90 px-8 sm:px-14 py-6 sm:py-8 text-base sm:text-xl font-bold rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110"
+              >
+                Quiero perder grasa y cerrar el año con toda
+              </Button>
+            </a>
 
             <p className="text-white/90 text-lg mt-6">
               Inicio: 17 de noviembre · Solo $39 USD

@@ -1,0 +1,1 @@
+export const CHECKOUT_URL = "https://nas.io/checkout-global?communityId=670829d72ff1a1c0c46c122e&communityCode=BE_FIT_20&requestor=signupRequestor&linkClicked=https%3A%2F%2Fnas.io%2Fportal%2Fchallenges%2Fmanage%3Fid%3D690bb9196a6fcbfd3c1a157f&sourceInfoType=challenge&sourceInfoOrigin=690bb9196a6fcbfd3c1a157f";

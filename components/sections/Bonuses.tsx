@@ -8,7 +8,6 @@ import { Heart, BookOpen, ClipboardCheck, Sparkles, Video } from "lucide-react";
 const bonuses = [
   { icon: BookOpen, text: "Recetario saludable" },
   { icon: ClipboardCheck, text: "Plantilla para seguimiento de hábitos" },
-  { icon: Sparkles, text: "Meditación especial de cierre del año" },
 ];
 
 const liveSessions = [
@@ -35,7 +34,7 @@ export default function Bonuses() {
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-6 mb-10">
+          <div className="grid md:grid-cols-2 gap-6 mb-10">
             {bonuses.map((bonus, index) => {
               const Icon = bonus.icon;
               return (

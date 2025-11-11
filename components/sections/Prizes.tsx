@@ -15,11 +15,10 @@ export default function Prizes() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1920&q=80&fit=crop"
+          src="/images/mariana/prizes/prizes-bg.jpg"
           alt="Fitness motivation background"
           fill
           className="object-cover"
-          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-b from-vibrant-pink/95 to-vibrant-pink/90" />
       </div>
@@ -48,8 +47,8 @@ export default function Prizes() {
                 <Trophy className="w-10 h-10 text-white" />
               </div>
               <h3 className="text-3xl font-bold mb-4">1 ganadora principal</h3>
-              <p className="text-6xl font-bold mb-3">$200</p>
-              <p className="text-xl opacity-90">USD por su transformación</p>
+              <p className="text-6xl font-bold mb-3">$200 USD</p>
+              <p className="text-xl opacity-90">por su transformación</p>
             </motion.div>
 
             <motion.div
@@ -64,7 +63,7 @@ export default function Prizes() {
               <h3 className="text-3xl font-bold text-charcoal mb-4">
                 5 reconocidas especiales
               </h3>
-              <p className="text-5xl font-bold text-vibrant-pink mb-3">$39</p>
+              <p className="text-5xl font-bold text-vibrant-pink mb-3">$39 USD</p>
               <p className="text-lg text-medium-gray">devolución total de su inscripción</p>
             </motion.div>
           </div>

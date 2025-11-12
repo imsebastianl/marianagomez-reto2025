@@ -83,7 +83,7 @@ export default function Hero() {
             >
               <div className="flex items-center gap-2 bg-white/95 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
                 <Calendar className="w-5 h-5 text-vibrant-pink" />
-                <span className="font-medium text-charcoal">Inicio: 17 de noviembre</span>
+                <span className="font-medium text-charcoal">Inicio: 24 de noviembre</span>
               </div>
               <div className="flex items-center gap-2 bg-white/95 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
                 <MessageCircle className="w-5 h-5 text-vibrant-pink" />

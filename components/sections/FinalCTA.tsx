@@ -46,7 +46,7 @@ export default function FinalCTA() {
             </a>
 
             <p className="text-white/90 text-lg mt-6">
-              Inicio: 17 de noviembre · Solo $39 USD
+              Inicio: 24 de noviembre · Solo $39 USD
             </p>
           </motion.div>
 
